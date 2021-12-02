@@ -16,3 +16,9 @@ Used HTML, JS, and CSS to start a web page about me. I created a guessing game w
 ## LAB - 03
 
 Created unordered list of jobs. Added a top 10 to the end of the page.
+
+## LAB - 04
+
+- Wrapped questions into functions in JS file. 
+  - Driver: Joshua McCluskey Navigator: Kendrah Davis
+  - Date: 12.02.2021
