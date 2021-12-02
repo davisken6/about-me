@@ -35,7 +35,7 @@ if (answerFive === 'yes' || answerFive === 'y');
 //console.log('Yes, I work in Greensboro.');
 alert('Yes, I work in Greensboro.');
 
-let answerSix = prompt('Guess a number between 1 and 100.');
+let answerSix = prompt('Guess a number between 1 and 10.');
 
 if (answerSix === '6' || answerSix === 'six');
 //console.log('Correct!');
