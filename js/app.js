@@ -105,6 +105,7 @@ alert('I\'ve worked at a restaurant, call center, and car dealership.');
 
   let userName = prompt('What is your name?'); {
 
-  alert('Welcome to my page, ' + userName);
+  alert('Welcome to my page, ' + userName +  '!');
 
-  alert('Thanks for checking out my webpage, ' + userName + '! ' + 'You got ' + correctAnswers + 'out of 7 right!');
+  alert('Thanks for checking out my webpage, ' + userName + '! ' + 'You got ' + correctAnswers + ' out of 7 right!');
+  }
