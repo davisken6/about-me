@@ -82,30 +82,28 @@ guessingGame();
 
 function numberSeven() {
 
+  let attemptsRemain = 6;
   let response7 = ['restaurant', 'call center', 'car dealership']
+  let answeredCorrectly = false;
+  while (attemptsRemain && !answeredCorrectly) {
+    let response = prompt('You have ' + attemptsRemain + ' attempts.' + ' Where is a place I have worked?').toLowerCase();
+    for (let i = 0; i < response7.length; i++)
+      if (response === response7[i]) {
+        alert('That\'s correct!');
+        answeredCorrectly = true;
+        
+      }
 
-  let numGuess2 = 0;
-
-  while (numGuess2 < 7) {
-    let answerSeven = prompt('Where is a place I have worked?').toLowerCase();
-
-    if (answerSeven === response7[0 || 1 || 2]) {
-      alert('That\'s right!');
-      correctAnswers++;
-      numGuess2 = 6;
-    } else {
-      numGuess2++;
-      alert('Nope, sorry.');
-    }
   }
+  attemptsRemain--;
 }
 numberSeven();
 
 alert('I\'ve worked at a restaurant, call center, and car dealership.');
 
-  let userName = prompt('What is your name?'); {
+let userName = prompt('What is your name?'); {
 
-  alert('Welcome to my page, ' + userName +  '!');
+  alert('Welcome to my page, ' + userName + '!');
 
   alert('Thanks for checking out my webpage, ' + userName + '! ' + 'You got ' + correctAnswers + ' out of 7 right!');
-  }
+}
