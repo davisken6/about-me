@@ -1,11 +1,11 @@
-*{
-  background-color: lightgoldenrodyellow;
+* {
+  background-color:rgb(223, 185, 233);
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
   text-align: center;
-  background-color: lightblue;
+  background-color:mediumspringgreen;
   padding: 10px;
   width: 90%;
   margin: auto;
@@ -17,25 +17,48 @@ h1 {
 p {
   text-align:left;
   margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: larger;
+  background-color: moccasin;
 
 }
 
 ul {
   list-style: inside circle;
+  font-size: larger;
+  margin-top: 10px;
+  margin-left: 50px;
 }
   
 ol {
-  list-style: decimal-leading-zero;
+  font-size: large;
+  font-family: sans-serif;
+  margin-left: 80%;
+
 }
 
 
 h2 {
-  font-size: medium;
+  font-size: x-large;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-family:sans-serif;
+
 }
+
+h3 {
+font-size:x-large;
+font-family: sans-serif;
+margin-left: 80%;
+padding-bottom: 1em;
+}
+
 
 img {
 width: 500px; height: 450px;
-display: block;
+margin-top: 5%;
+margin-left: 33%;
 border: 5px solid;
 border-radius: 15px;
 width: 450px;

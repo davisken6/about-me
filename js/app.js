@@ -10,8 +10,11 @@ function state() {
     //console.log('Yes, I am from NC!');
     alert('Yes, I am from NC!');
     correctAnswers++;
+  } else if (answerOne === 'no' || 'n') {
+    alert('That\'s incorrect. I am from the bible belt.');
   }
 }
+
 state();
 
 function age() {
@@ -21,6 +24,8 @@ function age() {
     //console.log('Correct, I am under 30.');
     alert('Correct, I am under 30.');
     correctAnswers++;
+  } else if (answerTwo === 'no' || 'n') {
+    alert('Do I really look like I\'m over 30?!');
   }
 }
 age();
@@ -33,6 +38,8 @@ function tech() {
     //console.log('True, I am new to the tech industry!');
     alert('True, I am new to the tech industry!');
     correctAnswers++;
+  } else if (answerThree === 'yes' || answerThree === 'y') {
+    alert('Thank you for your faith in me!');
   }
 }
 tech();
@@ -40,22 +47,28 @@ tech();
 function server() {
   let answerFour = prompt('Have I ever been a food/beverage server?').toLowerCase();
 
-  if (answerFour === 'yes' || answerFour === 'y');
-  //console.log('Yes, I am still a server unfortunately.');
-  alert('Yes, I am still a server unfortunately.');
-  correctAnswers++;
+  if (answerFour === 'yes' || answerFour === 'y') {
+    //console.log('Yes, I am still a server unfortunately.');
+    alert('Yes, I am still a server unfortunately.');
+    correctAnswers++;
+  } else if (answerFour === 'no' || answerFour === 'n') {
+    alert('If only I had been so lucky...');
+  }
 }
 server();
 
-function city() {
+function myCity() {
   let answerFive = prompt('Do I work in Greensboro?').toLowerCase();
 
-  if (answerFive === 'yes' || answerFive === 'y');
-  //console.log('Yes, I work in Greensboro.');
-  alert('Yes, I work in Greensboro.');
-  correctAnswers++;
+  if (answerFive === 'yes' || answerFive === 'y') {
+    //console.log('Yes, I work in Greensboro.');
+    alert('Yes, I work in Greensboro.');
+    correctAnswers++;
+  } else if (answerFive === 'no' || answerFive === 'n') {
+    alert('One day I will be free from Greensboro...');
+  }
 }
-city();
+myCity();
 
 function guessingGame() {
 
@@ -91,7 +104,6 @@ function numberSeven() {
       if (response === response7[i]) {
         alert('That\'s correct!');
         answeredCorrectly = true;
-        
       }
 
   }
@@ -101,9 +113,10 @@ numberSeven();
 
 alert('I\'ve worked at a restaurant, call center, and car dealership.');
 
-let userName = prompt('What is your name?'); {
+let userName = prompt('What is your name?');
 
-  alert('Welcome to my page, ' + userName + '!');
 
-  alert('Thanks for checking out my webpage, ' + userName + '! ' + 'You got ' + correctAnswers + ' out of 7 right!');
-}
+alert('Welcome to my page, ' + userName + '!');
+
+alert('Thanks for checking out my webpage, ' + userName + '! ' + 'You got ' + correctAnswers + ' out of 7 right!');
+
