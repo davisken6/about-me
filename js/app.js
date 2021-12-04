@@ -2,12 +2,10 @@
 
 let correctAnswers = 0;
 
-//console.log('Hello World');
 function state() {
   let answerOne = prompt('Am I from NC?').toLowerCase();
 
   if (answerOne === 'yes' || answerOne === 'y') {
-    //console.log('Yes, I am from NC!');
     alert('Yes, I am from NC!');
     correctAnswers++;
   } else if (answerOne === 'no' || 'n') {
@@ -21,7 +19,6 @@ function age() {
   let answerTwo = prompt('Am I under 30?').toLowerCase();
 
   if (answerTwo === 'yes' || answerTwo === 'y') {
-    //console.log('Correct, I am under 30.');
     alert('Correct, I am under 30.');
     correctAnswers++;
   } else if (answerTwo === 'no' || 'n') {
@@ -35,7 +32,6 @@ function tech() {
   let answerThree = prompt('Have I worked in the tech industry previously?').toLowerCase();
 
   if (answerThree === 'no' || answerThree === 'n') {
-    //console.log('True, I am new to the tech industry!');
     alert('True, I am new to the tech industry!');
     correctAnswers++;
   } else if (answerThree === 'yes' || answerThree === 'y') {
@@ -48,7 +44,6 @@ function server() {
   let answerFour = prompt('Have I ever been a food/beverage server?').toLowerCase();
 
   if (answerFour === 'yes' || answerFour === 'y') {
-    //console.log('Yes, I am still a server unfortunately.');
     alert('Yes, I am still a server unfortunately.');
     correctAnswers++;
   } else if (answerFour === 'no' || answerFour === 'n') {
@@ -61,7 +56,6 @@ function myCity() {
   let answerFive = prompt('Do I work in Greensboro?').toLowerCase();
 
   if (answerFive === 'yes' || answerFive === 'y') {
-    //console.log('Yes, I work in Greensboro.');
     alert('Yes, I work in Greensboro.');
     correctAnswers++;
   } else if (answerFive === 'no' || answerFive === 'n') {
