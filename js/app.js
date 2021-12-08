@@ -1,5 +1,9 @@
 'use strict';
 
+let userName = prompt('What is your name?');
+
+alert('Welcome to my page, ' + userName + '!');
+
 let correctAnswers = 0;
 
 function state() {
@@ -8,7 +12,7 @@ function state() {
   if (answerOne === 'yes' || answerOne === 'y') {
     alert('Yes, I am from NC!');
     correctAnswers++;
-  } else if (answerOne === 'no' || 'n') {
+  } else if (answerOne === 'no' || answerOne === 'n') {
     alert('That\'s incorrect. I am from the bible belt.');
   }
 }
@@ -21,7 +25,7 @@ function age() {
   if (answerTwo === 'yes' || answerTwo === 'y') {
     alert('Correct, I am under 30.');
     correctAnswers++;
-  } else if (answerTwo === 'no' || 'n') {
+  } else if (answerTwo === 'no' || answerTwo === 'n') {
     alert('Do I really look like I\'m over 30?!');
   }
 }
@@ -67,10 +71,10 @@ myCity();
 function guessingGame() {
 
   let answerSix = prompt('Guess a number between 1 and 10.');
-  let numGuess = 0
+  let numGuess = 0;
 
   while (numGuess < 5) {
-    if (answerSix == '6') {
+    if (answerSix === '6') {
       console.log('Correct!');
       alert('You got it right!');
       correctAnswers++;
@@ -90,7 +94,7 @@ guessingGame();
 function numberSeven() {
 
   let attemptsRemain = 6;
-  let response7 = ['restaurant', 'call center', 'car dealership']
+  let response7 = ['restaurant', 'call center', 'car dealership'];
   let answeredCorrectly = false;
   while (attemptsRemain && !answeredCorrectly) {
     let response = prompt('You have ' + attemptsRemain + ' attempts.' + ' Where is a place I have worked?').toLowerCase();
@@ -98,19 +102,16 @@ function numberSeven() {
       if (response === response7[i]) {
         alert('That\'s correct!');
         answeredCorrectly = true;
+        correctAnswers++;
       }
+    attemptsRemain--;
 
   }
-  attemptsRemain--;
 }
 numberSeven();
 
 alert('I\'ve worked at a restaurant, call center, and car dealership.');
 
-let userName = prompt('What is your name?');
-
-
-alert('Welcome to my page, ' + userName + '!');
 
 alert('Thanks for checking out my webpage, ' + userName + '! ' + 'You got ' + correctAnswers + ' out of 7 right!');
 
